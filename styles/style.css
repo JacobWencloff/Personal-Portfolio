@@ -1,9 +1,16 @@
+body{
+    margin: 0;
+}
 header{
     text-align: center;
-
+    background-color: #E0FFFF;
+    margin-top: 0;
+    padding-top: 0;
 }
 h1{
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    background-color: #E0FFFF;
 }
 nav{
     display: flex;
@@ -23,5 +30,20 @@ li{
     height: 50px;
     font-size: 20px;
     border-radius: 10px;
+    border-top-right-radius: 30%;
     border-style: inset;
+}
+#landingContainer p{
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#projectPg #pholder{
+    padding-top: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }

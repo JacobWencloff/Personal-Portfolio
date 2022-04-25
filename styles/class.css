@@ -7,7 +7,19 @@
 .hide{
     display: none;
 }
+.badges{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    
+}
 .badge{
-    width:100px;
+    width: 100px;
     height: 100px;
+    padding-left: 30px;
+    
+}
+.dropdownContent{
+    position: relative;
+    margin-left: 10px;
 }

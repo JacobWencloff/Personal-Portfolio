@@ -1,9 +1,9 @@
 //Each landing page nav iteam should have a button associated with it 
 //On click of Landing nav iteam, toggle .hide class on current page and associated page to the button
 $(document).ready(function(){
-    $('#aboutPg, #skillsPg, #projectPg, #contactPg').toggleClass('hide')
+    $('#aboutPg, #skillsPg, #projectPg, #contactPg, #thedrop').toggleClass('hide')
 
-    $('li').on('click', function(event){
+    $('li').css('cursor','pointer').on('click', function(event){
         let target = event.currentTarget.id
         console.log(target)
         $('#landingContainer').toggleClass('hide')
@@ -22,6 +22,10 @@ $(document).ready(function(){
                 $('#contactPg').toggleClass('hide')
                 break;
         }
+    })
+  
+    $('.drpbtn').on('click', function(){
+        $('.dropdownContent').toggleClass('hide')
     })
 
 })
