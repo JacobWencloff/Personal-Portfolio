@@ -2,7 +2,7 @@
 //On click of Landing nav iteam, toggle .hide class on current page and associated page to the button
 $(document).ready(function(){
     $('#aboutPg, #skillsPg, #projectPg, #contactPg, #thedrop').toggleClass('hide')
-
+    $('#ddNav').slideUp()
     $('li').css('cursor','pointer').on('click', function(event){
         let target = event.currentTarget.id
         console.log(target)
@@ -26,5 +26,6 @@ $(document).ready(function(){
   
     $('.DD-img').css('cursor', "pointer").on('click', function(){
         console.log('clicked')
+        $('#ddNav').slideDown()
     })
 })
