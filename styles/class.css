@@ -25,10 +25,16 @@
 }
 .DD-img{
     width: 50px;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
 }
-.dropdownContent{
-    position: relative;
-    margin-left: 10px;
+.ddNav{
+    display: flex;
+    justify-content: center;
 }
-
+.rounded{
+    border-right: 2px solid grey;
+    border-radius: 1px;
+}
+.dd-list li{
+    justify-content: space-evenly;
+}

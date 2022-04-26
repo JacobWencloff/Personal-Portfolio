@@ -3,10 +3,10 @@
 }
 #landing-nav{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 #landing-nav ul{
-    grid-column: 2;
+    grid-column: 1;
 }
 #about-txt{
     margin-left: 10px;
