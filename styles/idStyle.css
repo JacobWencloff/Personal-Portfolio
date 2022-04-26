@@ -7,6 +7,7 @@
 }
 #landing-nav ul{
     grid-column: 1;
+    margin-left: 10px;
 }
 #about-txt{
     margin-left: 10px;
@@ -36,6 +37,7 @@
     text-align: center;
     background-color: lightgrey;
     justify-self: center;
+    box-shadow: 3px 3px 10px 5px rgb(0, 0, 0, 0.4);
 }
 #abt1{
     margin-top: 20px;
@@ -50,12 +52,15 @@
 #abt3{
     grid-column: 1 / span 2;
     grid-row: 3;
+    padding-bottom: 5px;
 }
-#abtlinks{
+#abt-links{
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
+    justify-content: center;
 }
 #githubBadge, #linkedinBadge, #slackBadge{
     margin-top: 20px;
+    justify-content: center;
 }
