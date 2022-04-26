@@ -19,7 +19,16 @@
     padding-left: 30px;
     
 }
+.DD-Header-format{
+    display: flex;
+    justify-content: space-between;
+}
+.DD-img{
+    width: 50px;
+    justify-content: flex-end;
+}
 .dropdownContent{
     position: relative;
     margin-left: 10px;
 }
+

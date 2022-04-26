@@ -24,8 +24,7 @@ $(document).ready(function(){
         }
     })
   
-    $('.drpbtn').on('click', function(){
-        $('.dropdownContent').toggleClass('hide')
+    $('.DD-img').css('cursor', "pointer").on('click', function(){
+        console.log('clicked')
     })
-
 })

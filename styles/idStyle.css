@@ -17,6 +17,18 @@
     gap: 20px;
     row-gap: 50px;
 }
+#abt-header{
+    display: flex;
+    justify-content: space-between;
+}
+#abt-header h1{
+    padding-left: 15px;
+}
+
+#abt-header img{
+    width: 50px;
+    justify-content: flex-end;
+}
 #abt1, #abt2, #abt3{
     margin: 0;
     border-radius: 10px;
