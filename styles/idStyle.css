@@ -67,3 +67,22 @@
 #quote{
     display: none;
 }
+#node{
+    width: 120px;
+}
+#projectContent{
+    display: grid;
+    margin-top: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+#projectContent div{
+    height: 150px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px 5px rgb(0, 0, 0, 0.4);
+}

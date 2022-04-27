@@ -3,6 +3,7 @@
 $(document).ready(function(){
     $('#aboutPg, #skillsPg, #projectPg, #contactPg, #thedrop').toggleClass('hide')
     $('.ddNav' ).slideUp()
+    
     $('#landing-nav' ).toggleClass('hide').slideUp()
     window.setTimeout(function(){
         $('#landing-nav' ).slideDown()
