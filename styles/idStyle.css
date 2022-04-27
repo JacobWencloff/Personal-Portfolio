@@ -8,6 +8,7 @@
 #landing-nav ul{
     grid-column: 1;
     margin-left: 10px;
+    margin-right: 10px;
 }
 #about-txt{
     margin-left: 10px;
@@ -38,14 +39,13 @@
     background-color: lightgrey;
     justify-self: center;
     box-shadow: 3px 3px 10px 5px rgb(0, 0, 0, 0.4);
+    margin-top: 20px;
 }
 #abt1{
-    margin-top: 20px;
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 #abt2{
-    margin-top: 20px;
     grid-column: 1 / span 2;
     grid-row: 2;
 }

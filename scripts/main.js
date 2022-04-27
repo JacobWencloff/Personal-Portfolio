@@ -11,6 +11,13 @@ $(document).ready(function(){
 
     let currentPage = null
 
+    $('#landing-nav li').hover(function(){
+        $(this).css("height","75px")
+    }, function(){
+        $(this).css("height", "50px")
+    })
+
+
     $('.landing-but').css('cursor','pointer').on('click', function(event){
         let target = event.currentTarget.id
         $('#landingContainer').toggleClass('hide')
