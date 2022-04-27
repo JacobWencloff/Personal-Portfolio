@@ -1,10 +1,10 @@
 #badgeContainer{
     padding-top: 40px;
 }
-#landing-nav{
+/* #landing-nav{
     display: grid;
     grid-template-columns: 2fr 1fr;
-}
+} */
 #landing-nav ul{
     grid-column: 1;
     margin-left: 10px;
@@ -63,4 +63,7 @@
 #githubBadge, #linkedinBadge, #slackBadge{
     margin-top: 20px;
     justify-content: center;
+}
+#quote{
+    display: none;
 }
