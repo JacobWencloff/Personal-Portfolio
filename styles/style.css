@@ -51,6 +51,11 @@ ul{
     margin-left: 10px;
     margin-right: 10px;
 }
+form{
+    display: grid;
+    gap: 20px;
+    margin-left: 20px;
+}
 @media (min-width: 768px){
     #landingContainer header{
         margin-bottom: 0;

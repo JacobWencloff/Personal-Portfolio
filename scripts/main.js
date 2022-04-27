@@ -3,7 +3,7 @@
 $(document).ready(function(){
     $('#aboutPg, #skillsPg, #projectPg, #contactPg, #thedrop').toggleClass('hide')
     $('.ddNav' ).slideUp()
-    
+
     $('#landing-nav' ).toggleClass('hide').slideUp()
     window.setTimeout(function(){
         $('#landing-nav' ).slideDown()
@@ -13,40 +13,32 @@ $(document).ready(function(){
 
     $('.landing-but').css('cursor','pointer').on('click', function(event){
         let target = event.currentTarget.id
-    
         $('#landingContainer').toggleClass('hide')
-
         switch(target){
             case 'abt':
                 $('#aboutPg').toggleClass('hide')
                 currentPage = $('#aboutPg')
-                
                 break;
             case 'skl':             
                 $('#skillsPg').toggleClass('hide')
                 currentPage = $('#skillsPg')
-              
                 break;
             case 'prj':
                 $('#projectPg').toggleClass('hide')
                 currentPage = $('#projectPg')
-              
                 break;
             case 'cnt':
                 $('#contactPg').toggleClass('hide')
                 currentPage = $('#contactPg')
-               
                 break;
         }
     })
-
     //We need to create the logic behind the dropdown menu
     //this includes noticing when the DD items have been picks
     //and redirecting the user to the proper page after its been clicked
     $('.DD-img').css('cursor', "pointer").on('click',function(){
         console.log('clicked')
         $('.ddNav').slideToggle()
-
         $('.dd-But').css('cursor', 'pointer').on('click', function(event){
             let target = event.currentTarget.id
             console.log(target)
@@ -85,7 +77,7 @@ $(document).ready(function(){
         })
     })
 
-        // API call to zenquotes for desktop landing page
+        // //API call to zenquotes for desktop landing page
         // let quoteCall = $.ajax({
         
         //     method: "get",
