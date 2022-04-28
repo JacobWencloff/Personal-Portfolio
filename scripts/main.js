@@ -85,18 +85,18 @@ $(document).ready(function(){
     })
 
         // //API call to zenquotes for desktop landing page
-        // let quoteCall = $.ajax({
+        let quoteCall = $.ajax({
         
-        //     method: "get",
-        //     url: "https://zenquotes.io/api/random/afd050716de4256d0806a52d07ad783c36594faa"
-        // })
-        //     quoteCall.then(function(response){
-        //         console.log(response)
-        //         $('#quote').append(`${response[0].h}`)
-        //     })
-        //     .catch(function(){
-        //         console.log("Error")
-        //     })
+            method: "get",
+            url: "https://zenquotes.io/api/random/afd050716de4256d0806a52d07ad783c36594faa"
+        })
+            quoteCall.then(function(response){
+                console.log(response)
+                $('#quote').append(`${response[0].h}`)
+            })
+            .catch(function(){
+                console.log("Error")
+            })
         // API call to google forms for contact submission 
     $('form').on('submit', function(form){
         // form.preventDefault()
