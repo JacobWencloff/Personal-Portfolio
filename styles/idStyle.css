@@ -8,7 +8,12 @@
 #landing-nav ul{
     grid-column: 1;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 10px
+}
+#landing-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
 }
 #about-txt{
     margin-left: 10px;
@@ -39,13 +44,14 @@
     background-color: lightgrey;
     justify-self: center;
     box-shadow: 3px 3px 10px 5px rgb(0, 0, 0, 0.4);
-    margin-top: 20px;
 }
 #abt1{
+    margin-top: 20px;
     grid-column: 1 / span 2;
     grid-row: 1;
 }
 #abt2{
+    margin-top: 20px;
     grid-column: 1 / span 2;
     grid-row: 2;
 }
@@ -78,10 +84,12 @@
     row-gap: 15px;
 }
 #projectContent div{
-    height: 150px;
+    height: 250px;
+    width: 300px;
     margin-left: 10px;
     margin-right: 10px;
     background-color: rgb(128, 128, 128, 0.2);
+    justify-self:center;
     text-align: center;
     border-radius: 25px;
     box-shadow: 2px 2px 4px 5px rgb(0, 0, 0, 0.4);
