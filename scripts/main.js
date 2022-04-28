@@ -97,5 +97,29 @@ $(document).ready(function(){
         //     .catch(function(){
         //         console.log("Error")
         //     })
+        // API call to google forms for contact submission 
+    $('form').on('submit', function(form){
+        // form.preventDefault()
+        let baseUrl = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSd9-kKE1oDYpb8Q-1Sg8U0OV5Fw6MSCLXJT0gC7ItW3sjIkVw"    
+        let url = baseUrl += "/formResponse?"
 
+        let inputs = form.currentTarget.childNodes
+        inputs.forEach(element => {
+            if ((element.localName === "input" || element.localName === "textarea") && element.type !== "submit") {
+                url += element.name
+                url += "="
+                url += element.value
+                url += "&" // Having an extra & at the end has no consequences in this case
+            }
+        })
+        $.ajax({
+            url: url
+        }).done(function(e) {
+            console.log("Form succeeded")
+        }).fail(function(e) {
+            console.error("Form failed!")
+        })
+
+        return false
+    })
 })
