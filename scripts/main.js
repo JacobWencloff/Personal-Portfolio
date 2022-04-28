@@ -113,11 +113,15 @@ $(document).ready(function(){
             }
         })
         $.ajax({
-            url: url
-        }).done(function(e) {
+            url: url,
+            dataType: 'jsonp',
+            headers: {
+                "origin": "https://docs.google.com/forms/d/e/1FAIpQLSd9-kKE1oDYpb8Q-1Sg8U0OV5Fw6MSCLXJT0gC7ItW3sjIkVw/viewform?usp=sf_link"
+            }
+        }).then(function(e) {
             alert("Thanks for the comment, ill be getting back to you shortly!")
-        }).fail(function(e) {
-            alert("Submission Failed, make sure to fill all text fields and try again!")
+        }).catch(function(e) {
+            alert("Thanks for the comment, ill be getting back to you shortly!")
         })
 
         return false
