@@ -98,12 +98,14 @@
     width: 250px;
     height: 200px;
     text-align: left;
-    
+    box-shadow: 2px 2px 4px 5px rgb(0, 0, 0, 0.4);
 }
 #email{
     width: 250px;
+    box-shadow: 2px 2px 4px 5px rgb(0, 0, 0, 0.4);
 }
 #sub{
     width: 100px;
+    box-shadow: 2px 2px 4px 5px rgb(0, 0, 0, 0.4);
 
 }

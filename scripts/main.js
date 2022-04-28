@@ -115,9 +115,9 @@ $(document).ready(function(){
         $.ajax({
             url: url
         }).done(function(e) {
-            console.log("Form succeeded")
+            alert("Thanks for the comment, ill be getting back to you shortly!")
         }).fail(function(e) {
-            console.error("Form failed!")
+            alert("Submission Failed, make sure to fill all text fields and try again!")
         })
 
         return false
